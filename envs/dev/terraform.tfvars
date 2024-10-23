@@ -4,9 +4,8 @@ oauthclient_secret = "Dp8Q_DS0meoixjBob5doqo54vWaML0ZTL6yhl0wKSn4"
 aws_region = "ap-northeast-1"
 
 #Architect Callflow Path
-//inboundcallflow_dir=".//callflow//TestTerraform.yaml"
 inboundcallflow_dir="C://Users//Klinton//archy//Export_Dest//inboundcall//TestTerraform_Exported.yaml"
-
+inqueuecallflow_dir="C://Users//Klinton//archy//Export_Dest//inqueuecall//TestTerraformInqueue_Exported.yaml"
 #In Dev env Stage credential and URL
 stage_intid="02a71b9f-f894-4885-8437-ce8f6a65f0e9"
 stage_Authorization="SVE3YUhkZjZ6SGRZTGNXQXFUR3J2SFBRYnZHMEEyTkk6ZGY3Z29uUnFuVnpHNm5Ubg=="
@@ -23,7 +22,7 @@ dr_Authorization="b2xKbzZTNFVHYTBZNDQ2MmtWR2NZRlJFUmlSbjR5Q0I6NVF5T3V4RmE4ZmlabH
 dr_D013_dataaction_URL="https://dev-apicallinfra-dr.pgf-life.co.jp/pgf/v1/cc/d013"
 
 
-#Exporting flow
+#Exporting Inbound flow
 flowName= "TestTerraform"
 flowType="inboundcall"
 outputDir="./Export_Dest/inboundcall"
@@ -31,3 +30,9 @@ exportFileName="TestTerraform_Exported"
 ex_oauthclient_id = "81a42da3-4d39-4997-8bdc-54224a996da3"
 ex_oauthclient_secret = "gWBWTX3XPMgBjpL7YomgDl9wUwPQyQI5rKL-PFXOz_w"
 location="usw2.pure.cloud"
+
+#Exporting Inqueue flow
+inqueueflowName="TestTerraform_Inqueue"
+inqueueflowType="inqueuecall"
+inqueueOutputDir="./Export_Dest/inqueuecall"
+inqueueexportFileName="TestTerraformInqueue_Exported"

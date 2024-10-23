@@ -17,6 +17,11 @@ variable "inboundcallflow_dir"{
     description= "Name of the callflow"
 }
 
+variable "inqueuecallflow_dir"{
+   type= string 
+    description= "Name of the callflow"
+}
+
 variable "stage_intid"{
    type= string 
     description= "Integration ID for webservices"
@@ -91,6 +96,12 @@ variable "exportFileName"{
     description= "Name for Exported File name"
     default="pointel"
 }
+variable "inqueueexportFileName"{
+    type= string 
+    description= "Name for Exported File name"
+    default="pointel"
+}
+
 
 variable "ex_oauthclient_id"{
    type= string 
@@ -108,3 +119,18 @@ variable "location"{
     description= "Location"
     default="usw2.pure.cloud"
 }
+variable "inqueueflowName"{
+   type= string 
+   default=""
+}
+
+variable "inqueueflowType"{
+   type= string 
+   default=""
+}
+
+variable "inqueueOutputDir"{
+   type= string 
+   default=""
+}
+

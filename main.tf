@@ -48,10 +48,27 @@ module "export"{
   ex_oauthclient_id= var.ex_oauthclient_id
   ex_oauthclient_secret=var.ex_oauthclient_secret
   location=var.location
+}
+
+module "inqueueexport"{
+  source=".//modules//inqueueExport"
+  ex_oauthclient_id= var.ex_oauthclient_id
+  ex_oauthclient_secret=var.ex_oauthclient_secret
+  location=var.location
+  inqueueflowName=var.inqueueflowName
+  inqueueflowType=var.inqueueflowType
+  inqueueOutputDir=var.inqueueOutputDir
+  inqueueexportFileName=var.inqueueexportFileName
 
 }
 resource "genesyscloud_flow" "INBOUNDCALL_TestTerraform" {
-  depends_on        = [module.datatable, module.Queues,module.userprompt,module.action,module.export]
+  depends_on        = [module.datatable, module.Queues,module.userprompt,module.action,module.export,module.inqueueexport,genesyscloud_flow.InQueueCall_TestTerraform]
   file_content_hash = "${filesha256(var.inboundcallflow_dir)}"
   filepath          = "${var.inboundcallflow_dir}"
+}
+
+
+resource "genesyscloud_flow" "InQueueCall_TestTerraform" {
+  file_content_hash = "${filesha256(var.inqueuecallflow_dir)}"
+  filepath          = "${var.inqueuecallflow_dir}"
 }
