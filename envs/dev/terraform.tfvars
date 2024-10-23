@@ -4,7 +4,8 @@ oauthclient_secret = "Dp8Q_DS0meoixjBob5doqo54vWaML0ZTL6yhl0wKSn4"
 aws_region = "ap-northeast-1"
 
 #Architect Callflow Path
-inboundcallflow_dir=".//callflow//TestTerraform.yaml"
+//inboundcallflow_dir=".//callflow//TestTerraform.yaml"
+inboundcallflow_dir="C://Users//Klinton//archy//Export_Dest//inboundcall//TestTerraform_Exported.yaml"
 
 #In Dev env Stage credential and URL
 stage_intid="02a71b9f-f894-4885-8437-ce8f6a65f0e9"
@@ -26,7 +27,7 @@ dr_D013_dataaction_URL="https://dev-apicallinfra-dr.pgf-life.co.jp/pgf/v1/cc/d01
 flowName= "TestTerraform"
 flowType="inboundcall"
 outputDir="./Export_Dest/inboundcall"
-exportFileName="pointel"
-ex_oauthclient_id = "2703fbe7-5357-479c-b678-08186dca2989"
-ex_oauthclient_secret = "yr3Q5b9Cmkd5qe_la2M87KsfDNgQlOjuYDNKoZvk8jk"
+exportFileName="TestTerraform_Exported"
+ex_oauthclient_id = "81a42da3-4d39-4997-8bdc-54224a996da3"
+ex_oauthclient_secret = "gWBWTX3XPMgBjpL7YomgDl9wUwPQyQI5rKL-PFXOz_w"
 location="usw2.pure.cloud"

@@ -1,6 +1,6 @@
 #Environment Credential (west - PTL)
-oauthclient_id = "2703fbe7-5357-479c-b678-08186dca2989"
-oauthclient_secret = "yr3Q5b9Cmkd5qe_la2M87KsfDNgQlOjuYDNKoZvk8jk"
+oauthclient_id = "81a42da3-4d39-4997-8bdc-54224a996da3"
+oauthclient_secret = "gWBWTX3XPMgBjpL7YomgDl9wUwPQyQI5rKL-PFXOz_w"
 aws_region = "us-west-2"
 
 #Architect Callflow Path

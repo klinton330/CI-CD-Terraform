@@ -15,7 +15,6 @@ variable "aws_region"{
 variable "inboundcallflow_dir"{
    type= string 
     description= "Name of the callflow"
-    default=""
 }
 
 variable "stage_intid"{
